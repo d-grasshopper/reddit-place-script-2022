@@ -2,6 +2,27 @@
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
+# Бърз старт
+
+1. Инсталирате Python 3
+2. Посещавате <https://www.reddit.com/prefs/apps>
+3. Цъкате "create (another) app" бутона най-долу
+4. Избирате "script" опцията и попълвате полетата със каквато и да е информация (не е важно)
+5. Променяте `.env` файла по следния начин:
+
+```text
+ENV_PLACE_USERNAME='["username_на_вашия_редит_акаунт"]'
+ENV_PLACE_PASSWORD='["password_на_вашия_редит_акаунт"]'
+ENV_PLACE_APP_CLIENT_ID='["името_под_новосъздадената_апликация_от_линка"]'
+ENV_PLACE_SECRET_KEY='["secret_от_новосъздадената_апликация_от_линка"]'
+ENV_DRAW_X_START="x_position_start_integer"
+ENV_DRAW_Y_START="y_position_start_integer"
+ENV_R_START='["0"]'
+ENV_C_START='["0"]'
+```
+
+6. Пускате скрипта, като напишете команда `python main.py` в конзолата
+
 ## About
 
 This is a script to draw a JPG onto r/place (<https://www.reddit.com/r/place/>).
